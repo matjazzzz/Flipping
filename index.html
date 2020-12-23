@@ -1,0 +1,492 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipping</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!--<style>
+    div { border: 1px solid #be2f2f; }
+  </style>-->
+
+</head>
+<body class="font-bodyfont">
+
+  <div><!-- main wrapper-->
+
+    <!-- Top tabs & stuff -->
+    <header class="flex justify-between bg-gray-700">
+      <div class="flex pt-3 space-x-3 px-3">
+        <div class="toptab"><p>Dashboard</p></div>
+        <div class="toptab"><p>Plan & distribute</p></div>
+        <div class="toptab-active"><p>Media monitoring</p></div>
+        <div class="toptab"><p>Analytics</p></div>
+      </div>
+      <div class="flex text-gray-200 text-sm justify-center space-x-5 pr-5 items-center">
+        <p class="p-0">Administrator</p>
+        <i><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"></path></svg></i>
+      </div>
+      
+        
+      
+    </header><!-- END Top tabs & stuff -->
+
+    <!-- Top toolbar -->
+    <div class="flex items-center justify-between bg-gray-100">
+
+      <!-- Logo & stuff -->
+      <div class="flex flex-row items-center">
+
+        <!-- Logo -->
+        <div class="mr-5">
+          <img class="m-3" src="img/LOGO2.svg" alt="logo">
+        </div><!-- END Logo -->
+
+        <!-- Search input -->
+        <div>
+          <div class="relative">
+            <Form class="m-0 text-sm">
+              <input type="text" placeholder="  Find content with all these words" class="border border-gray-400 shadow-inner rounded-lg w-80 h-10 bg-white hover:border-gray-700">
+            </Form>
+            <div class="absolute top-3 right-3">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </div>
+          </div>
+        </div><!-- END Search input -->
+
+        <!-- Icons next to search -->
+        <div class="flex mx-3">
+          <button class="topbtn">
+            <i>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </i>
+          </button>
+          <button class="topbtn ml-3">
+            <i>
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+            </i>
+          </button>
+        </div><!-- END Icons next to search -->
+
+      </div><!-- END Logo & stuff -->
+
+      <!-- Icons on the right -->
+      <div class="flex space-x-3 mr-3">
+        <button class="topbtn">
+          <i>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </i>
+        </button>
+        <button class="topbtn">
+          <i>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          </i>
+        </button>
+        <button class="topbtn">
+          <i>
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          </i>
+        </button>
+      </div><!-- END Icons on the right -->
+
+    </div><!-- END Top toolbar -->
+
+    
+    <!-- Filters & Articles wrapper -->
+    <div class="flex bg-gray-300">
+
+      <!-- Filters-->
+      <div class="px-4">
+
+        <div class="flex text-xs py-2">
+          <div class="flex-auto text-center p-2">Media<br><input type="checkbox" class="mt-1"></div>
+          <div class="flex-auto text-center p-2">Both<br><input type="checkbox" class="mt-1"></div>
+          <div class="flex-auto text-center p-2">Engagement<br><input type="checkbox" class="mt-1"></div>
+        </div>
+
+        
+        <!-- Date filter -->
+        <div class="bg-white rounded-md mb-2 pb-0.5">
+
+          <div class="filter">
+            <p class="pl-1.5">Date filter</p>
+            <i>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+            </i>
+          </div>
+
+
+          <div class="bg-gray-100 text-gray-700 font-bold m-2 text-xs rounded-md flex justify-between items-center">
+            
+            <div class="bg-gray-300 p-1.5 cursor-pointer hover:bg-gray-500 hover:text-white">
+              <i>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+              </i>
+            </div>
+
+            <p class="text-center">14.dec.2020</p>
+
+            <div class="bg-gray-300 p-1.5 cursor-pointer hover:bg-gray-500 hover:text-white">
+              <i>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </i>
+            </div>
+
+          </div>
+
+
+          <div class="flex m-2 justify-between items-center text-xs text-gray-700">
+            <button class="flex font-bold bg-gray-300 rounded-md p-1.5 space-x-2 hover:bg-gray-500 hover:text-white items-center">
+              <p class="pl-0.5">Select</p>
+              <i>
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
+              </i>
+            </button>
+            <button class="flex font-bold bg-gray-300 rounded-md p-1.5 space-x-2 hover:bg-gray-500 hover:text-white items-center">
+              <p class="pl-0.5">Range</p>
+              <i>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+              </i>
+            </button>
+          </div>
+
+
+          <div class="m-2 p-1">
+            <table class="table-auto text-xs w-full">
+              <tbody>
+                <tr>
+                  <td>today</td>
+                  <td align="right"><p class="txtbg">24178</p></td>
+                </tr>
+                <tr>
+                  <td>yesterday</td>
+                  <td align="right"><p class="txtbg">15863</p></td>
+                </tr>
+                <tr>
+                  <td>last week</td>
+                  <td align="right"><p class="txtbg">180785</p></td>
+                </tr>
+                <tr>
+                  <td>last month</td>
+                  <td align="right"><p class="txtbg">533832</p></td>
+                  <tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div><!-- END Date filter -->
+
+
+        <!-- Topics filter -->
+        <div class="bg-white rounded-md mb-3 pb-0.5">
+
+          <div class="filter">
+            <p class="pl-1.5">Topics</p>
+            <i>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+            </i>
+          </div>
+
+          <div class="m-2">
+            <form action="" class="m-0">
+              <input class="w-full rounded-md border border-gray-400 text-sm p-1 shadow-inner" type="text" name="" id="" placeholder=" Poišči...">
+            </form>
+          </div>
+
+          <div class="m-2 px-1 h-32 overflow-y-scroll">
+            <table class="table-auto text-xs w-full">
+              <tbody>
+                <tr>
+                  <td>Milorad Dodik</td>
+                  <td align="right"><p class="txtbg">545</p></td>
+                </tr>
+                <tr>
+                  <td>Vip mobile</td>
+                  <td align="right"><p class="txtbg">475</p></td>
+                </tr>
+                <tr>
+                  <td>Rusija</td>
+                  <td align="right"><p class="txtbg">372</p></td>
+                </tr>
+                <tr>
+                  <td>MTS - Mobilna...</td>
+                  <td align="right"><p class="txtbg">318</p></td>
+                </tr>
+                <tr>
+                  <td>Specijalni sud</td>
+                  <td align="right"><p class="txtbg">297</p></td>
+                </tr>
+                <tr>
+                  <td>Evropska unija</td>
+                  <td align="right"><p class="txtbg">289</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div><!-- END Topics filter -->
+
+
+        <!-- Countries filter -->
+        <div class="bg-white rounded-md mb-3 pb-0.5">
+
+          <div class="filter">
+            <p class="pl-1.5">Countries</p>
+            <i>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+            </i>
+          </div>
+
+          <div class="m-2">
+            <form action="" class="m-0">
+              <input class="w-full rounded-md border border-gray-400 text-sm p-1 shadow-inner" type="text" name="" id="" placeholder="  Poišči...">
+            </form>
+          </div>
+
+          <div class="m-2 px-1 h-32 overflow-y-scroll">
+            <table class="table-auto text-xs w-full">
+              <tbody>
+                <tr>
+                  <td>Serbia</td>
+                  <td align="right"><p class="txtbg">13410</p></td>
+                </tr>
+                <tr>
+                  <td>Slovenia</td>
+                  <td align="right"><p class="txtbg">5112</p></td>
+                </tr>
+                <tr>
+                  <td>Macedonia</td>
+                  <td align="right"><p class="txtbg">4934</p></td>
+                </tr>
+                <tr>
+                  <td>BIH</td>
+                  <td align="right"><p class="txtbg">3935</p></td>
+                </tr>
+                <tr>
+                  <td>Kosovo</td>
+                  <td align="right"><p class="txtbg">1778</p></td>
+                </tr>
+                <tr>
+                  <td>Croatia</td>
+                  <td align="right"><p class="txtbg">1595</p></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div><!-- END Countries filter -->
+
+
+      </div><!-- END Filters-->
+
+
+      <!-- Tabs & article list & article -->
+      <div class="bg-gray-200 w-full">
+
+          <!-- Tabs -->
+          <div class="bg-gray-700 flex justify-start pt-3 px-3 space-x-3">
+            <div class="bg-gray-200 text-gray-800 font-bold py-2 px-5 text-xs rounded-t-lg"><p>Articles: 33,235</p></div>
+            <div class="bg-gray-800 text-gray-200 font-bold py-2 px-5 text-xs rounded-t-lg"><p>Stories</p></div>
+          </div>
+          <!-- END Tabs-->
+
+
+          <!-- Articles Wrapper -->
+          <div class="flex">
+
+              <!-- Left Wrapper -->
+              <div class="p-4 bg-gray-200">
+
+                  <div class="flex justify-between items-center border-b border-gray-300">
+                    <div class="bg-gray-300 p-1.5 my-2 cursor-pointer hover:bg-gray-500 hover:text-white">
+                      <i>
+                        <svg class="w-5 h-5 transform scale-n100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                      </i>
+                    </div>
+                      <div class="p-2 text-center text-xs">
+                          <p>Page  1/333</p>
+                      </div>
+                      <div class="bg-gray-300 p-1.5 my-2 cursor-pointer hover:bg-gray-500 hover:text-white">
+                          <i>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                          </i>
+                      </div>
+                  </div>
+
+                  <div class="text-xs p-3 flex space-x-7 justify-end border-b border-gray-300">
+
+                      <div class="flex items-center space-x-2">
+                        <p>Date</p>
+                        <i>
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
+                        </i>
+                      </div>
+
+                      <div class="flex items-center space-x-2">
+                        <p>Media</p>
+                        <i>
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
+                        </i>
+                      </div>
+                      
+                  </div>
+
+                  <div class="text-xs flex p-3 justify-between">
+                    <div>Check all | None</div>
+                    <div>Selected articles: 0 | <a href="#" class="link">Clear</a></div>
+                  </div>
+
+
+                    <!-- Article list wrapper -->
+                    <div class="overflow-hidden">
+
+                      <!-- Article list -->
+                      <div class="p-2 overflow-y-auto w-80 h-136 bg-gray-100 rounded-lg">
+
+                          <div class="flex text-sm border border-gray-300 bg-white rounded-lg my-2 p-2">
+                            <div class="p-2"><form action=""><input type="checkbox" class=""></form></div>
+                            <div>
+                              <div class="px-1.5 my-1"><p class="font-bold">Naslov cras rutrum eget nulla sed vehicula</p></div>
+                              <div class="px-1.5 my-1"><p><a href="#" class="link">Alo!</a></p></div>
+                              <div class="flex items-center justify-between">
+                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 15. Dec. 2020</p></div>
+                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                            <div>
+                              <div class="px-1.5 my-1"><p class="font-bold">Naslov laborum odio perferendis nesciunt natus sequi</p></div>
+                              <div class="px-1.5 my-1"><p><a  href="#" class="link">Dnevno.hr</a></p></div>
+                              <div class="flex items-center justify-between">
+                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 14. Dec. 2020</p></div>
+                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                            <div>
+                              <div class="px-1.5 my-1"><p class="font-bold">Naslov cras rutrum eget nulla sed vehicula</p></div>
+                              <div class="px-1.5 my-1"><p><a href="#" class="link">Newsbreak.com</a></p></div>
+                              <div class="flex items-center justify-between">
+                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 13. Dec. 2020</p></div>
+                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                            <div>
+                              <div class="px-1.5 my-1"><p class="font-bold">Naslov laborum odio perferendis nesciunt natus sequi</p></div>
+                              <div class="px-1.5 my-1"><p><a  href="#" class="link">Dnevno.hr</a></p></div>
+                              <div class="flex items-center justify-between">
+                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 14. Dec. 2020</p></div>
+                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                            <div>
+                              <div class="px-1.5 my-1"><p class="font-bold">Naslov cras rutrum eget nulla sed vehicula</p></div>
+                              <div class="px-1.5 my-1"><p><a href="#" class="link">Newsbreak.com</a></p></div>
+                              <div class="flex items-center justify-between">
+                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 13. Dec. 2020</p></div>
+                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                            <div>
+                              <div class="px-1.5 my-1"><p class="font-bold">Naslov laborum odio perferendis nesciunt natus sequi</p></div>
+                              <div class="px-1.5 my-1"><p><a href="#" class="link">Dnevno.hr</a></p></div>
+                              <div class="flex items-center justify-between">
+                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 14. Dec. 2020</p></div>
+                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
+                              </div>
+                            </div>
+                          </div>
+
+                      </div><!-- END Article list -->
+
+                    </div><!-- Article list wrapper -->
+
+              </div><!-- END Left Wrapper -->
+
+
+              <!-- Right Wrapper -->
+              <div class="bg-white">
+
+                <div class="border-b border-gray-200">
+                  <p class="mx-5 my-3 text-lg font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+
+
+                <div class="flex border-b border-gray-200 p-5 text-xs leading-5 justify-between">
+                  <div class="flex space-x-4">
+                      <div class="text-gray-400">
+                        <ul>
+                          <li>Media:</li>
+                          <li>Authors:</li>
+                          <ul>Topics:</ul>
+                          <ul>Date:</ul>
+                          <ul>Page:</ul>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul>
+                          <li>Alo! (Hronika)</li>
+                          <li>&nbsp;</li>
+                          <li>&nbsp;</li>
+                          <li>Tue, 15. Dec. 2020</li>
+                          <li>10</li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div>
+                      <i><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></i>
+                  </div>
+                </div>
+
+
+                <div class="flex justify-between border-b border-gray-200">
+                    <div class="bg-white justify-start pt-2 px-2 space-x-2">
+                        <ul class="flex px-2 space-x-5 text-sm">
+                          <li class="p-1 border-b-4 border-red-500 cursor-pointer"><a href="#">Content</a></li>
+                          <li class="p-1 border-b-4 border-gray-200 text-gray-400 hover:border-red-500 hover:text-gray-800 cursor-pointer"><a href="#">Preview</a></li>
+                          <li class="p-1 border-b-4 border-gray-200 text-gray-400 hover:border-red-500 hover:text-gray-800 cursor-pointer"><a href="#">Source</a></li>
+                        </ul>
+                    </div>
+                    <div class="text-xs pt-3 pr-4 text-gray-500">
+                      <p>Monday, December 14, 2020&nbsp;&nbsp;|&nbsp;&nbsp;9:25:47 PM</p>
+                    </div>
+                </div>
+
+                <div class="m-5">
+                  <p class="mb-2 text-xl font-bold">Lorem ipsum dolor sit amet consectetur</p>
+                  <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, aspernatur fugiat odio magnam minima, accusantium eligendi optio recusandae exercitationem, mollitia minus natus similique maiores quasi quis culpa id commodi modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, asperiores, reiciendis vel debitis mollitia totam rerum fuga quam aliquid eos tenetur beatae incidunt delectus, nesciunt odit qui ab facere. Doloremque?</p>
+                </div>
+
+              </div><!-- END Right Wrapper -->
+
+          </div><!-- END Articles Wrapper -->
+    
+      </div><!-- END Tabs & article list & article -->
+
+
+    </div><!-- END Filters & Articles wrapper -->
+
+    
+
+  </div> <!-- END main wrapper-->
+  
+</body>
+</html>
