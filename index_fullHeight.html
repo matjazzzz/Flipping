@@ -1,0 +1,557 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flipping - full height</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-bodyfont">
+<!-- START -------------------->
+
+<!-- Main wrapper -->
+<div class="flex flex-col h-screen bg-pink-600">
+
+
+   <!-- Top tabs -->
+   <div class="flex bg-gray-700 justify-between">
+      <div class="flex pt-3 space-x-3 px-3">
+         <div class="toptab"><p>Dashboard</p></div>
+         <div class="toptab"><p>Plan & distribute</p></div>
+         <div class="toptab-active"><p>Media monitoring</p></div>
+         <div class="toptab"><p>Analytics</p></div>
+      </div>
+      <div class="flex text-gray-200 text-sm space-x-5 pr-5 items-center">
+         <p>Administrator</p>
+         <i><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"></path></svg></i>
+      </div>
+   </div><!-- END Top tabs -->
+
+
+   <!-- Logo + Search + icons -->
+   <div class="flex bg-gray-100 items-center p-3 space-x-3">
+
+      <div class="pr-10">
+         <img src="img/LOGO2.svg" alt="">
+      </div>
+
+      <!-- Search input -->
+      <div>
+        <div class="relative">
+          <Form class="m-0 text-sm">
+            <input type="text" placeholder="  Find content with all these words" class="border border-gray-400 shadow-inner rounded-lg w-80 h-10 bg-white hover:border-gray-700">
+          </Form>
+          <div class="absolute top-3 right-3">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </div>
+      </div><!-- END Search input -->
+
+      <!-- Icons next to search -->
+      <button class="topbtn">
+        <i>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </i>
+      </button>
+      <button class="topbtn">
+        <i>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+        </i>
+      </button><!-- END Icons next to search -->
+
+      <div class="flex-grow"></div>
+
+      <!-- Icons on the right -->
+      <button class="topbtn">
+        <i>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        </i>
+      </button>
+      <button class="topbtn">
+        <i>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+        </i>
+      </button>
+      <button class="topbtn">
+        <i>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+        </i>
+      </button><!-- END Icons on the right -->
+
+
+   </div><!-- END Logo + Search + icons -->
+
+
+   <!-- Content wrapper -->
+   <div class="flex overflow-y-auto bg-indigo-700 p-0">
+
+      <!-- Filters -->
+      <div class="flex p-0 bg-blue-400">
+
+         <div class="flex flex-col bg-gray-300 overflow-y-auto p-4">
+
+            <div class="flex px-4 text-xs">
+               <div class="flex-auto text-center p-2">Media<br><input type="checkbox" class="mt-1"></div>
+               <div class="flex-auto text-center p-2">Both<br><input type="checkbox" class="mt-1"></div>
+               <div class="flex-auto text-center p-2">Engagement<br><input type="checkbox" class="mt-1"></div>
+            </div>
+
+
+            <!-- Date -->
+            <div class="bg-white rounded-md text-xs mb-2">
+
+               <div class="filter">
+                  <div>Date filter</div>
+                  <div><img src="img/arrow-up.svg" class="w-3 h-3 text-red-600" alt=""></div>
+               </div>
+
+               <div class="flex justify-between m-2 bg-gray-100 items-center">
+
+                  <div class="btnarrow">
+                     <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                     </i>
+                  </div>
+                  <p>14.dec.2020</p>
+                  <div class="btnarrow">
+                     <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                     </i>
+                  </div>
+
+               </div>
+               
+               <div class="flex justify-between m-2">
+                  <div class="flex btnarrow items-center">
+                     <p class="px-1">Select</p>
+                     <i><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg></i>
+                  </div>
+                  <div class="flex btnarrow items-center">
+                     <p class="px-1">Range</p>
+                     <i><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg></i>
+                  </div>
+               </div>
+
+               <div class="m-2">
+                  <table class="table-auto text-xs w-full">
+                     <tbody>
+                        <tr>
+                           <td>today</td>
+                           <td align="right"><p class="txtbg">24178</p></td>
+                        </tr>
+                        <tr>
+                           <td>yesterday</td>
+                           <td align="right"><p class="txtbg">15863</p></td>
+                        </tr>
+                        <tr>
+                           <td>last week</td>
+                           <td align="right"><p class="txtbg">180785</p></td>
+                        </tr>
+                        <tr>
+                           <td>last month</td>
+                           <td align="right"><p class="txtbg">533832</p></td>
+                        <tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div><!-- END Date -->
+
+
+            <!-- Topics -->
+            <div class="bg-white rounded-md text-xs mb-2">
+
+               <div class="filter">
+                  <div>Topics</div>
+                  <div><img src="img/arrow-up.svg" class="w-3 h-3 text-red-600" alt=""></div>
+               </div>
+
+               <div class="m-2">
+                  <form action="" class="m-0">
+                  <input class="filterinput" type="text" name="" id="" placeholder=" Poišči...">
+                  </form>
+               </div>
+
+               <div class="m-2 px-1 h-32 overflow-y-scroll">
+                  <table class="table-auto text-xs w-full">
+                  <tbody>
+                     <tr>
+                        <td>Milorad Dodik</td>
+                        <td align="right"><p class="txtbg">545</p></td>
+                     </tr>
+                     <tr>
+                        <td>Vip mobile</td>
+                        <td align="right"><p class="txtbg">475</p></td>
+                     </tr>
+                     <tr>
+                        <td>Rusija</td>
+                        <td align="right"><p class="txtbg">372</p></td>
+                     </tr>
+                     <tr>
+                        <td>MTS - Mobilna...</td>
+                        <td align="right"><p class="txtbg">318</p></td>
+                     </tr>
+                     <tr>
+                        <td>Specijalni sud</td>
+                        <td align="right"><p class="txtbg">297</p></td>
+                     </tr>
+                     <tr>
+                        <td>Evropska unija</td>
+                        <td align="right"><p class="txtbg">289</p></td>
+                     </tr>
+                  </tbody>
+                  </table>
+               </div>
+
+            </div><!-- END Topics -->
+
+            
+            <!-- Countries -->
+            <div class="bg-white rounded-md text-xs mb-2">
+
+               <div class="filter">
+                  <div>Countries</div>
+                  <div><img src="img/arrow-up.svg" class="w-3 h-3 text-red-600" alt=""></div>
+               </div>
+
+               <div class="m-2">
+                  <form action="" class="m-0">
+                  <input class="filterinput" type="text" name="" id="" placeholder=" Poišči...">
+                  </form>
+               </div>
+
+               <div class="m-2 px-1 h-32 overflow-y-scroll">
+                  <table class="table-auto text-xs w-full">
+                  <tbody>
+                     <tr>
+                        <td>Serbia</td>
+                        <td align="right"><p class="txtbg">13410</p></td>
+                     </tr>
+                     <tr>
+                        <td>Slovenia</td>
+                        <td align="right"><p class="txtbg">5112</p></td>
+                     </tr>
+                     <tr>
+                        <td>Macedonia</td>
+                        <td align="right"><p class="txtbg">4934</p></td>
+                     </tr>
+                     <tr>
+                        <td>BIH</td>
+                        <td align="right"><p class="txtbg">3935</p></td>
+                     </tr>
+                     <tr>
+                        <td>Kosovo</td>
+                        <td align="right"><p class="txtbg">1778</p></td>
+                     </tr>
+                     <tr>
+                        <td>Croatia</td>
+                        <td align="right"><p class="txtbg">1595</p></td>
+                     </tr>
+                  </tbody>
+                  </table>
+               </div>
+
+            </div><!-- END Countries -->
+
+
+            <!-- Media types -->
+            <div class="bg-white rounded-md text-xs mb-2">
+
+              <div class="filter">
+                 <div>Media types</div>
+                 <div><img src="img/arrow-up.svg" class="w-3 h-3 text-red-600" alt=""></div>
+              </div>
+
+              <div class="m-2">
+                 <form action="" class="m-0">
+                 <input class="filterinput" type="text" name="" id="" placeholder=" Poišči...">
+                 </form>
+              </div>
+
+              <div class="m-2 px-1">
+                 <table class="table-auto text-xs w-full">
+                 <tbody>
+                    <tr>
+                       <td>Internet</td>
+                       <td align="right"><p class="txtbg">13410</p></td>
+                    </tr>
+                    <tr>
+                       <td>Press</td>
+                       <td align="right"><p class="txtbg">5112</p></td>
+                    </tr>
+                    <tr>
+                       <td>Television</td>
+                       <td align="right"><p class="txtbg">4934</p></td>
+                    </tr>
+                    <tr>
+                       <td>Radio</td>
+                       <td align="right"><p class="txtbg">3935</p></td>
+                    </tr>
+                 </tbody>
+                 </table>
+              </div>
+
+           </div><!-- END Media types -->
+
+
+         </div>
+
+
+      </div><!-- END Filters -->
+
+
+      <!-- News tabs + list + article -->
+      <div class="flex overflow-y-auto flex-col p-0 bg-yellow-300">
+
+         <!-- Tabs -->
+         <div class="flex bg-gray-700 pt-3 px-3 space-x-3">
+            <div class="bg-gray-200 text-gray-800 font-bold py-2 px-5 text-xs rounded-t-lg"><p>Articles: 33,235</p></div>
+            <div class="bg-gray-800 text-gray-200 font-bold py-2 px-5 text-xs rounded-t-lg"><p>Stories</p></div>
+         </div><!-- END Tabs -->
+
+
+         <!-- Article list + article-->
+         <div class="flex flex-row overflow-y-auto bg-green-300">
+
+
+            <!-- List -->
+            <div class="sm:w-1/2 lg:w-2/5 xl:w-2/6 2xl:w-1/5 flex flex-col bg-gray-200 p-4">
+
+               <div class="flex justify-between items-center pb-2">
+                  <div class="btnarrow">
+                     <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                     </i>
+                  </div>
+                  <div><p class="text-xs">Page 1/333</p></div>
+                  <div class="btnarrow">
+                     <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                     </i>
+                  </div>
+               </div>
+
+               <div class="flex flex-row text-xs justify-end space-x-4 py-2 border-t border-b border-gray-400">
+                  <div class="flex space-x-1 p-1 items-center">
+                     <p>Date</p>
+                     <i>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
+                     </i>
+                  </div>
+                  <div class="flex space-x-1 p-1 items-center">
+                     <p>Media</p>
+                     <i>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path></svg>
+                     </i>
+                  </div>
+               </div>
+
+               <div class="text-xs flex py-4 justify-between">
+                  <div>Check All | None</div>
+                  <div>Selected articles: 0 | <a href="#" class="link">Clear</a></div>
+               </div>
+
+
+               <!-- Cards -->
+               <div class="flex flex-col overflow-y-auto p-2">
+
+                  <div class="card-selected">
+                     <div class="p-3">
+                        <form action=""><input type="checkbox"></form>
+                     </div>
+                     <div class="pr-3">
+                        <p class="my-2 text-sm font-bold">Lorem ipsum dolor sit amet sit, consectetur adipiscing elit</p>
+                        <div class="my-2"><p><a href="#" class="link">Alo!</a></p></div>
+                        <div class="flex justify-between my-2">
+                           <p class="text-gray-400">Tue, 15. Dec. 2020</p>
+                           <img class="h-4 w-4" src="img/refresh.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card">
+                     <div class="p-3">
+                        <form action=""><input type="checkbox"></form>
+                     </div>
+                     <div class="pr-3">
+                        <p class="my-2 text-sm font-bold">Cras sodales elit non aliquam ultrices lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <div class="my-2"><p><a href="#" class="link">Alo!</a></p></div>
+                        <div class="flex justify-between my-2">
+                           <p class="text-gray-400">Tue, 15. Dec. 2020</p>
+                           <img class="h-4 w-4" src="img/refresh.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card">
+                     <div class="p-3">
+                        <form action=""><input type="checkbox"></form>
+                     </div>
+                     <div class="pr-3">
+                        <p class="my-2 text-sm font-bold">Nulla finibus cursus commodo aenean iaculis, dui at faucibus pharetra</p>
+                        <div class="my-2"><p><a href="#" class="link">Alo!</a></p></div>
+                        <div class="flex justify-between my-2">
+                           <p class="text-gray-400">Mon, 14. Dec. 2020</p>
+                           <img class="h-4 w-4" src="img/refresh.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card">
+                     <div class="p-3">
+                        <form action=""><input type="checkbox"></form>
+                     </div>
+                     <div class="pr-3">
+                        <p class="my-2 text-sm font-bold">Curabitur nec tellus placerat leo consectetur venenatis eu id sapien suspendisse</p>
+                        <div class="my-2"><p><a href="#" class="link">Alo!</a></p></div>
+                        <div class="flex justify-between my-2">
+                           <p class="text-gray-400">Mon, 14. Dec. 2020</p>
+                           <img class="h-4 w-4" src="img/refresh.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="p-3">
+                       <form action=""><input type="checkbox"></form>
+                    </div>
+                    <div class="pr-3">
+                       <p class="my-2 text-sm font-bold">Lorem ipsum dolor sit amet sit, consectetur adipiscing elit</p>
+                       <div class="my-2"><p><a href="#" class="link">Alo!</a></p></div>
+                       <div class="flex justify-between my-2">
+                          <p class="text-gray-400">Sun, 13. Dec. 2020</p>
+                          <img class="h-4 w-4" src="img/refresh.svg" alt="">
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="card">
+                    <div class="p-3">
+                       <form action=""><input type="checkbox"></form>
+                    </div>
+                    <div class="pr-3">
+                       <p class="my-2 text-sm font-bold">Cras sodales elit non aliquam ultrices lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                       <div class="my-2"><p><a href="#" class="link">Alo!</a></p></div>
+                       <div class="flex justify-between my-2">
+                          <p class="text-gray-400">Sun, 13. Dec. 2020</p>
+                          <img class="h-4 w-4" src="img/refresh.svg" alt="">
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="card">
+                    <div class="p-3">
+                       <form action=""><input type="checkbox"></form>
+                    </div>
+                    <div class="pr-3">
+                       <p class="my-2 text-sm font-bold">Nulla finibus cursus commodo aenean iaculis, dui at faucibus pharetra</p>
+                       <div class="my-2"><p><a href="#" class="link">Alo!</a></p></div>
+                       <div class="flex justify-between my-2">
+                          <p class="text-gray-400">Sat, 12. Dec. 2020</p>
+                          <img class="h-4 w-4" src="img/refresh.svg" alt="">
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="card">
+                    <div class="p-3">
+                       <form action=""><input type="checkbox"></form>
+                    </div>
+                    <div class="pr-3">
+                       <p class="my-2 text-sm font-bold">Curabitur nec tellus placerat leo consectetur venenatis eu id sapien suspendisse</p>
+                       <div class="my-2"><p><a href="#" class="link">Alo!</a></p></div>
+                       <div class="flex justify-between my-2">
+                          <p class="text-gray-400">Sat, 12. Dec. 2020</p>
+                          <img class="h-4 w-4" src="img/refresh.svg" alt="">
+                       </div>
+                    </div>
+                 </div>
+
+                 <div class="text-xs"><p>&nbsp;</p></div>
+
+
+               </div><!-- END Cards -->
+
+
+            </div><!-- END List -->
+
+            <!-- Article -->
+            <div class="sm:w-1/2 lg:w-3/5 xl:w-4/6 2xl:w-4/5 bg-white overflow-y-auto px-6">
+               
+               <div class="border-b border-gray-300 text-lg font-medium text-gray-600 py-4">
+                  <p>Naslov članka lorem ipsum dolor sit amet, consectetur adipiscing</p>
+               </div>
+
+               <div class="flex text-xs border-b border-gray-300 py-4 space-x-5 leading-5">
+                  <div>
+                     <ul class="text-gray-400">
+                        <li>Media:</li>
+                        <li>Authors:</li>
+                        <li>Topics:</li>
+                        <li>Date:</li>
+                        <li>Page:</li>
+                     </ul>
+                  </div>
+                  <div>
+                     <ul>
+                        <li>Alo! (Hronika)</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>Tue, 15. Dec. 2020</li>
+                        <li>10</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="flex items-center border-b border-gray-200">
+                  <div>
+                     <ul class="text-sm flex pt-2 space-x-5">
+                        <li class="li-tab-active">Content</li>
+                        <li class="li-tab">Preview</li>
+                        <li class="li-tab">Source</li>
+                     </ul>
+                  </div>
+                  <div class="flex flex-grow"></div>
+                  <div class="text-xs text-gray-400">
+                     <p>Monday, December 14, 2020&nbsp;&nbsp;|&nbsp;&nbsp;9:25:47 PM</p>
+                  </div>
+
+               </div>
+
+               <div class="py-4 bg-white">
+                  <p class="text-xl font-bold my-3">Naslov članka lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                  <p class="text-sm my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta repellendus debitis perferendis ad! Explicabo deserunt amet debitis cumque accusantium nemo quos, odio, facilis itaque quisquam placeat maxime dolores repellat beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptas deleniti itaque sunt dolorum magni vitae, reprehenderit nesciunt eos excepturi voluptates, sit, delectus quis. Ducimus earum provident fugiat veniam porro! Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+               </div>
+
+
+            </div><!-- END Article -->
+
+         </div><!-- END Article list + article-->
+
+      </div>
+
+
+   </div><!-- END Content wrapper -->
+
+
+   <div class="flex py-3 bg-gray-800 items-center space-x-5 px-6 justify-end">
+    <p class="text-gray-400 text-sm">2020 &copy; Flipping, All tights reserved</p>
+    <div class="flex-grow"></div>
+    <p class="text-green-400 text-sm">Status</p>
+    <span class="flex h-5 w-5 items-center justify-center">
+      <span class="animate-ping absolute inline-flex h-5 w-5 rounded-full bg-green-200 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
+    </span>
+   </div>
+
+
+
+</div><!-- END Main wrapper -->
+
+
+
+
+
+
+
+<!-- FINISH -------------------->
+</body>
+</html>
