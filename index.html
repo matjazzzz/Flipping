@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flipping</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles1.css">
 
   <!--<style>
     div { border: 1px solid #be2f2f; }
@@ -12,10 +12,11 @@
 </head>
 <body class="font-bodyfont">
 
-  <div><!-- main wrapper-->
+  <!-- main wrapper-->
+  <div class="flex flex-col h-full">
 
     <!-- Top tabs & stuff -->
-    <header class="flex justify-between bg-gray-700">
+    <header class="flex flex-none justify-between bg-gray-700">
       <div class="flex pt-3 space-x-3 px-3">
         <div class="toptab"><p>Dashboard</p></div>
         <div class="toptab"><p>Plan & distribute</p></div>
@@ -32,7 +33,7 @@
     </header><!-- END Top tabs & stuff -->
 
     <!-- Top toolbar -->
-    <div class="flex items-center justify-between bg-gray-100">
+    <div class="flex flex-none items-center justify-between bg-gray-100">
 
       <!-- Logo & stuff -->
       <div class="flex flex-row items-center">
@@ -281,7 +282,7 @@
 
 
       <!-- Tabs & article list & article -->
-      <div class="bg-gray-200 w-full">
+      <div class="flex flex-col overflow-y-auto bg-gray-200 w-full">
 
           <!-- Tabs -->
           <div class="bg-gray-700 flex justify-start pt-3 px-3 space-x-3">
@@ -292,7 +293,7 @@
 
 
           <!-- Articles Wrapper -->
-          <div class="flex">
+          <div class="flex flex-row overflow-y-auto">
 
               <!-- Left Wrapper -->
               <div class="p-4 bg-gray-200">
@@ -337,93 +338,90 @@
                   </div>
 
 
-                    <!-- Article list wrapper -->
-                    <div class="overflow-hidden">
+                  <!-- Article list -->
+                  <div class="flex flex-col overflow-y-auto w-80 p-2 bg-gray-100 rounded-lg">
 
-                      <!-- Article list -->
-                      <div class="p-2 overflow-y-auto w-80 h-136 bg-gray-100 rounded-lg">
-
-                          <div class="flex text-sm border border-gray-300 bg-white rounded-lg my-2 p-2">
-                            <div class="p-2"><form action=""><input type="checkbox" class=""></form></div>
-                            <div>
-                              <div class="px-1.5 my-1"><p class="font-bold">Naslov cras rutrum eget nulla sed vehicula</p></div>
-                              <div class="px-1.5 my-1"><p><a href="#" class="link">Alo!</a></p></div>
-                              <div class="flex items-center justify-between">
-                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 15. Dec. 2020</p></div>
-                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
-                              </div>
-                            </div>
+                      <div class="flex text-sm border border-gray-300 bg-white rounded-lg my-2 p-2">
+                        <div class="p-2"><form action=""><input type="checkbox" class=""></form></div>
+                        <div>
+                          <div class="px-1.5 my-1"><p class="font-bold">Naslov cras rutrum eget nulla sed vehicula</p></div>
+                          <div class="px-1.5 my-1"><p><a href="#" class="link">Alo!</a></p></div>
+                          <div class="flex items-center justify-between">
+                              <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 15. Dec. 2020</p></div>
+                              <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
                           </div>
+                        </div>
+                      </div>
 
-                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
-                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
-                            <div>
-                              <div class="px-1.5 my-1"><p class="font-bold">Naslov laborum odio perferendis nesciunt natus sequi</p></div>
-                              <div class="px-1.5 my-1"><p><a  href="#" class="link">Dnevno.hr</a></p></div>
-                              <div class="flex items-center justify-between">
-                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 14. Dec. 2020</p></div>
-                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
-                              </div>
-                            </div>
+                      <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                        <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                        <div>
+                          <div class="px-1.5 my-1"><p class="font-bold">Naslov laborum odio perferendis nesciunt natus sequi</p></div>
+                          <div class="px-1.5 my-1"><p><a  href="#" class="link">Dnevno.hr</a></p></div>
+                          <div class="flex items-center justify-between">
+                              <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 14. Dec. 2020</p></div>
+                              <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
                           </div>
+                        </div>
+                      </div>
 
-                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
-                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
-                            <div>
-                              <div class="px-1.5 my-1"><p class="font-bold">Naslov cras rutrum eget nulla sed vehicula</p></div>
-                              <div class="px-1.5 my-1"><p><a href="#" class="link">Newsbreak.com</a></p></div>
-                              <div class="flex items-center justify-between">
-                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 13. Dec. 2020</p></div>
-                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
-                              </div>
-                            </div>
+                      <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                        <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                        <div>
+                          <div class="px-1.5 my-1"><p class="font-bold">Naslov cras rutrum eget nulla sed vehicula</p></div>
+                          <div class="px-1.5 my-1"><p><a href="#" class="link">Newsbreak.com</a></p></div>
+                          <div class="flex items-center justify-between">
+                              <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 13. Dec. 2020</p></div>
+                              <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
                           </div>
+                        </div>
+                      </div>
 
-                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
-                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
-                            <div>
-                              <div class="px-1.5 my-1"><p class="font-bold">Naslov laborum odio perferendis nesciunt natus sequi</p></div>
-                              <div class="px-1.5 my-1"><p><a  href="#" class="link">Dnevno.hr</a></p></div>
-                              <div class="flex items-center justify-between">
-                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 14. Dec. 2020</p></div>
-                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
-                              </div>
-                            </div>
+                      <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                        <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                        <div>
+                          <div class="px-1.5 my-1"><p class="font-bold">Naslov laborum odio perferendis nesciunt natus sequi</p></div>
+                          <div class="px-1.5 my-1"><p><a  href="#" class="link">Dnevno.hr</a></p></div>
+                          <div class="flex items-center justify-between">
+                              <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 14. Dec. 2020</p></div>
+                              <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
                           </div>
+                        </div>
+                      </div>
 
-                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
-                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
-                            <div>
-                              <div class="px-1.5 my-1"><p class="font-bold">Naslov cras rutrum eget nulla sed vehicula</p></div>
-                              <div class="px-1.5 my-1"><p><a href="#" class="link">Newsbreak.com</a></p></div>
-                              <div class="flex items-center justify-between">
-                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 13. Dec. 2020</p></div>
-                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
-                              </div>
-                            </div>
+                      <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                        <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                        <div>
+                          <div class="px-1.5 my-1"><p class="font-bold">Naslov cras rutrum eget nulla sed vehicula</p></div>
+                          <div class="px-1.5 my-1"><p><a href="#" class="link">Newsbreak.com</a></p></div>
+                          <div class="flex items-center justify-between">
+                              <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 13. Dec. 2020</p></div>
+                              <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
                           </div>
+                        </div>
+                      </div>
 
-                          <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
-                            <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
-                            <div>
-                              <div class="px-1.5 my-1"><p class="font-bold">Naslov laborum odio perferendis nesciunt natus sequi</p></div>
-                              <div class="px-1.5 my-1"><p><a href="#" class="link">Dnevno.hr</a></p></div>
-                              <div class="flex items-center justify-between">
-                                  <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 14. Dec. 2020</p></div>
-                                  <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
-                              </div>
-                            </div>
+                      <div class="flex text-sm border border-transparent my-2 p-2 rounded-lg hover:border-gray-300 hover:bg-white hover:shadow-lg">
+                        <div class="p-2.5"><form action=""><input type="checkbox" class=""></form></div>
+                        <div>
+                          <div class="px-1.5 my-1"><p class="font-bold">Naslov laborum odio perferendis nesciunt natus sequi</p></div>
+                          <div class="px-1.5 my-1"><p><a href="#" class="link">Dnevno.hr</a></p></div>
+                          <div class="flex items-center justify-between">
+                              <div class="px-1.5 my-1"><p class="text-gray-400">Tue, 14. Dec. 2020</p></div>
+                              <i class="pr-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg></i>
                           </div>
+                        </div>
+                      </div>
 
-                      </div><!-- END Article list -->
+                  </div><!-- END Article list -->
 
-                    </div><!-- Article list wrapper -->
+                  <!-- Article list wrapper -->
 
               </div><!-- END Left Wrapper -->
 
 
               <!-- Right Wrapper -->
-              <div class="bg-white">
+              <div class="flex flex-col bg-white overflow-y-auto">
 
                 <div class="border-b border-gray-200">
                   <p class="mx-5 my-3 text-lg font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
@@ -472,7 +470,7 @@
 
                 <div class="m-5">
                   <p class="mb-2 text-xl font-bold">Lorem ipsum dolor sit amet consectetur</p>
-                  <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, aspernatur fugiat odio magnam minima, accusantium eligendi optio recusandae exercitationem, mollitia minus natus similique maiores quasi quis culpa id commodi modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, asperiores, reiciendis vel debitis mollitia totam rerum fuga quam aliquid eos tenetur beatae incidunt delectus, nesciunt odit qui ab facere. Doloremque?</p>
+                  <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, aspernatur fugiat odio magnam minima, accusantium eligendi optio recusandae exercitationem, mollitia minus natus similique maiores quasi quis culpa id commodi modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, asperiores, reiciendis vel debitis mollitia totam rerum fuga quam aliquid eos tenetur beatae incidunt delectus, nesciunt odit qui ab facere. Doloremque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, aspernatur fugiat odio magnam minima, accusantium eligendi optio recusandae exercitationem, mollitia minus natus similique maiores quasi quis culpa id commodi modi. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
               </div><!-- END Right Wrapper -->
@@ -481,8 +479,9 @@
     
       </div><!-- END Tabs & article list & article -->
 
-
     </div><!-- END Filters & Articles wrapper -->
+    
+    <div class="bg-red-700">aaa</div>
 
     
 
